@@ -1,0 +1,57 @@
+* {
+    background-color: rgb(245, 241, 238);
+}
+
+// ----- -------------- ------ //
+
+.searchBox {
+    text-align: center;  
+    margin: 32px 0;  
+    input {
+        width: 35%;
+        padding: 10px;
+    }
+}
+.gallery {
+    width: 80%;
+    margin: 0 auto;
+    .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    
+    img {
+        width: 34%;
+        margin: 6% 0;
+        box-shadow: 4px 5px 5px #969494;
+    }
+    
+}
+footer {
+    display: flex;
+    justify-content: space-between;  
+    margin-top: 14px;
+    border-top: 1px solid #969494;
+    span {
+        color: #868383;
+        font-style: helvetica;
+        font-size: 0.65em;        
+        margin-top: 10px;
+    }
+    a {
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 0.65rem; 
+        color: #868383;
+        text-decoration: none;
+    }
+}
+
+// ------- ---- MEDIA QUERIES ---- ------- //
+
+@media (min-width: 500px) {
+   
+}
+@media (min-width: 760px) {
+}
