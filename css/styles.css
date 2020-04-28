@@ -1,29 +1,31 @@
 * {
-  background-color: #f5f1ee;
+  border: 1px solid red;
+  font-style: helvetica;
 }
 
-.searchBox {
-  text-align: center;
-  margin: 32px 0;
-}
-.searchBox input {
-  width: 35%;
-  padding: 10px;
+input {
+  background-color: #f8f6ef;
+  border: 2px solid #e6e0e0;
+  width: 40%;
+  max-width: 460px;
+  padding: 8px;
 }
 
 .gallery {
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
 }
-.gallery .flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+
+a {
+  text-align: center;
+  width: 40%;
 }
-.gallery img {
-  width: 34%;
-  margin: 6% 0;
-  box-shadow: 4px 5px 5px #969494;
+a img {
+  width: 70%;
+  box-shadow: 5px 5px 5px #969494;
+  border: 1px solid #ddd4cd;
+}
+a img:hover {
+  transform: scale(1.07);
 }
 
 footer {
@@ -34,7 +36,6 @@ footer {
 }
 footer span {
   color: #868383;
-  font-style: helvetica;
   font-size: 0.65em;
   margin-top: 10px;
 }
@@ -44,6 +45,11 @@ footer a {
   font-size: 0.65rem;
   color: #868383;
   text-decoration: none;
+  transition: color 0.4s ease-in;
+}
+footer a:hover {
+  color: #2b2929;
+  transform: scale(1.04);
 }
 
 /*# sourceMappingURL=styles.css.map */
