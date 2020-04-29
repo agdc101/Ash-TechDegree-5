@@ -1,55 +1,133 @@
 * {
-  border: 1px solid red;
   font-style: helvetica;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  background-color: #e9d9c7;
+  margin-top: 30px;
 }
 
 input {
+  display: block;
+  margin: 0 auto;
   background-color: #f8f6ef;
   border: 2px solid #e6e0e0;
-  width: 40%;
-  max-width: 460px;
-  padding: 8px;
+  width: 56%;
+  max-width: 380px;
+  padding: 2px;
 }
 
 .gallery {
-  width: 90%;
+  max-width: 960px;
+  margin: 18px auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 a {
   text-align: center;
-  width: 40%;
+  margin: 10px 8px;
 }
 a img {
-  width: 70%;
-  box-shadow: 5px 5px 5px #969494;
+  width: 70px;
+  height: 70px;
+  box-shadow: 6px 6px 6px #969494;
   border: 1px solid #ddd4cd;
 }
 a img:hover {
   transform: scale(1.07);
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 14px;
-  border-top: 1px solid #969494;
+.sign-off {
+  margin-top: 26px;
+  text-align: center;
 }
-footer span {
-  color: #868383;
-  font-size: 0.65em;
-  margin-top: 10px;
+.sign-off span {
+  font-style: italic;
+  color: #a8a1a1;
+  font-size: 0.8em;
 }
-footer a {
-  font-weight: bold;
-  margin-top: 10px;
-  font-size: 0.65rem;
-  color: #868383;
-  text-decoration: none;
-  transition: color 0.4s ease-in;
+
+@media (min-width: 320px) {
+  .gallery {
+    width: 70%;
+  }
+
+  a img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .gallery a {
+    margin: 11px 14px;
+  }
 }
-footer a:hover {
-  color: #2b2929;
-  transform: scale(1.04);
+@media (min-width: 400px) {
+  input {
+    width: 45%;
+  }
+
+  a img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .gallery a {
+    margin: 12px 20px;
+  }
+}
+@media (min-width: 682px) {
+  a img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 729x) {
+  .gallery a {
+    margin: 13px 24px;
+  }
+}
+@media (min-width: 790px) {
+  .gallery {
+    width: 66%;
+  }
+
+  .gallery a {
+    margin: 20px 26px;
+  }
+}
+@media (min-width: 953px) {
+  a img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 1160px) {
+  a img {
+    width: 135px;
+    height: 135px;
+  }
+
+  input {
+    padding: 6px;
+  }
+
+  .sign-off {
+    margin-bottom: 26px;
+  }
+}
+@media (min-width: 1440px) {
+  a img {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
