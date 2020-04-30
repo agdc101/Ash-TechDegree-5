@@ -12,7 +12,7 @@ html, body {
 // _-_-_-_-_-_- BASE STYLES (TOP DOWN)_-_-_-_-_-//
 
 body {
-    background-color: rgb(233, 217, 199);
+    background-color: rgb(243, 238, 215);
     margin-top: 30px;
 }
 
@@ -22,8 +22,8 @@ input {
     background-color: rgb(248, 246, 239);
     border: 2px solid rgb(230, 224, 224);
     width: 56%;
-    max-width: 380px;
-    padding: 2px;
+    max-width: 480px;
+    padding: 4px;
 }
 
 .gallery {
@@ -33,24 +33,24 @@ input {
     display: flex;  
     flex-wrap: wrap;
     justify-content: space-around;
+    a {
+        margin: 10px 8px;
+        img {
+            width: 150px;
+            height: 150px;
+            box-shadow: 6px 6px 6px #969494;
+            border: 1px solid rgb(221, 212, 205);
+            &:hover {
+            transform: scale(1.07);
+        }
+        }
+    }
     
 }
-a {
-    text-align: center;
-    margin: 10px 8px;
-    img {
-        width: 70px;
-        height: 70px;
-        box-shadow: 6px 6px 6px #969494;
-        border: 1px solid rgb(221, 212, 205);
-        &:hover {
-        transform: scale(1.07);
-    }
-    }
-}
+
   
 .sign-off {
-    margin-top: 26px;
+    margin: 26px 0;
     text-align: center;
     span {
         font-style: italic;
@@ -58,83 +58,24 @@ a {
         font-size: 0.8em;
     }
 }
+// ---------------------------- -----//
+
 // ---------------- ----- ---------------- //
 // ------- ---- MEDIA QUERIES ---- ------- //
 
-@media (min-width: 320px) {
-    .gallery {
-        width: 70%;
-    }  
-    a img {
-        width: 80px;
-        height: 80px;
-    }
-    .gallery a {
-        margin: 11px 14px;
-        
-    }
-}
-
-@media (min-width: 400px) {
-    input {
-        width: 45%;
-    }
-    a img {
-        width: 90px;
-        height: 90px;
-    }
-    .gallery a {
-        margin: 12px 20px;
-        
-    }
-}
-
-@media (min-width: 682px) {
-    a img {
-        width: 100px;
-        height: 100px;
-    }
-}
-@media (min-width: 729x) {
-    .gallery a {
-        margin: 13px 24px;
-        
-    }
-}
-@media (min-width: 790px) {
-    .gallery {
-        width: 66%;
-    }
-    .gallery a {
-        margin: 20px 26px;
-        
-    }
-}
-@media (min-width: 953px) {
-    a img {
-        width: 100px;
-        height: 100px;
-    }
-    
-}
-@media (min-width: 1160px) {    
-    a img {
-        width: 135px;
-        height: 135px;
+@media (min-width: 1020px) {
+    .gallery a img {
+        width: 180px;
+        height: 180px;
     }
     input {
-        padding: 6px;
+        width: 80%;
+        padding: 8px;
     }
-    .sign-off {
-        margin-bottom: 26px;
-    }
-    
-    
 }
-@media (min-width: 1440px) {    
-    a img {
-        width: 150px;
-        height: 150px;
+@media (min-width: 1260px) {
+    .gallery a img {
+        width: 200px;
+        height: 200px;
     }
-    
 }
