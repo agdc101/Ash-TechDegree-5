@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-  background-color: #f3eed7;
+  background-color: #fde4d1;
   margin-top: 30px;
 }
 
@@ -17,9 +17,16 @@ input {
   margin: 0 auto;
   background-color: #f8f6ef;
   border: 2px solid #e6e0e0;
+  border-radius: 8px;
   width: 56%;
   max-width: 480px;
   padding: 4px;
+}
+input[type=text] {
+  font-size: 1.4em;
+}
+input:focus {
+  outline: none;
 }
 
 .gallery {
@@ -36,8 +43,7 @@ input {
 .gallery a img {
   width: 150px;
   height: 150px;
-  box-shadow: 6px 6px 6px #969494;
-  border: 1px solid #ddd4cd;
+  box-shadow: 6px 6px 6px #888787;
 }
 .gallery a img:hover {
   transform: scale(1.07);
@@ -50,7 +56,15 @@ input {
 .sign-off span {
   font-style: italic;
   color: #a8a1a1;
-  font-size: 0.8em;
+  font-size: 0.9em;
+  transition: color 0.5s;
+}
+.sign-off span:hover {
+  color: #1d1c1c;
+}
+
+.lb-data .lb-caption {
+  font-size: 0.95em;
 }
 
 @media (min-width: 1020px) {

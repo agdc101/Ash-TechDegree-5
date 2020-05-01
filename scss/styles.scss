@@ -12,7 +12,7 @@ html, body {
 // _-_-_-_-_-_- BASE STYLES (TOP DOWN)_-_-_-_-_-//
 
 body {
-    background-color: rgb(243, 238, 215);
+    background-color: rgb(253, 228, 209);
     margin-top: 30px;
 }
 
@@ -21,9 +21,16 @@ input {
     margin: 0 auto;
     background-color: rgb(248, 246, 239);
     border: 2px solid rgb(230, 224, 224);
+    border-radius: 8px;
     width: 56%;
     max-width: 480px;
     padding: 4px;
+    &[type='text'] {
+        font-size:1.4em;
+    }
+    &:focus {
+        outline: none;
+    }
 }
 
 .gallery {
@@ -38,8 +45,7 @@ input {
         img {
             width: 150px;
             height: 150px;
-            box-shadow: 6px 6px 6px #969494;
-            border: 1px solid rgb(221, 212, 205);
+            box-shadow: 6px 6px 6px #888787;
             &:hover {
             transform: scale(1.07);
         }
@@ -47,7 +53,6 @@ input {
     }
     
 }
-
   
 .sign-off {
     margin: 26px 0;
@@ -55,11 +60,17 @@ input {
     span {
         font-style: italic;
         color: rgb(168, 161, 161);
-        font-size: 0.8em;
+        font-size: 0.9em;
+        transition: color .5s;
+        &:hover {
+            color: rgb(29, 28, 28);
+        }
     }
 }
-// ---------------------------- -----//
-
+// ----------- PLUGIN STYLE----------- -----//
+.lb-data .lb-caption {
+    font-size: 0.95em;
+}
 // ---------------- ----- ---------------- //
 // ------- ---- MEDIA QUERIES ---- ------- //
 
