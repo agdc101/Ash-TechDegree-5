@@ -10,7 +10,7 @@ lightbox.option({
 $('input').on('keyup', () => {
     $('a').each( function (){
         let search = $('input').val().toLowerCase();
-        let caption = $(this).attr('data-title').toLowerCase();
+        let caption = $(this).attr('data-title');
         // if the caption isnt included. hide() the image             
         if ( !caption.includes(search) ) {
             $(this).fadeOut(600);           
