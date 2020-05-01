@@ -8,7 +8,7 @@ lightbox.option({
 
 // -------- SEARCH BAR FUNCTION -------- //
 $('input').on('keyup', () => {
-    $('a').each( function (){
+    $('.gallery a').each( function (){
         let search = $('input').val().toLowerCase();
         let caption = $(this).attr('data-title');
         // if the caption isnt included. hide() the image             
