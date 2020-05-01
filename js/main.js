@@ -1,3 +1,10 @@
+lightbox.option({
+    'resizeDuration': 400,
+    'wrapAround': true,
+    'maxHeight': 720,
+    'maxWidth': 960
+  })
+
 
 // -------- SEARCH BAR FUNCTION -------- //
 $('input').on('keyup', () => {
