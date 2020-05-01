@@ -17,11 +17,8 @@ $('input').on('keyup', () => {
         } // show function added if user removes values to the input. 
         else {
             $(this).fadeIn(600);
-        }
-       
-    });
-    
-    
+        }      
+    });    
 })
 
 
