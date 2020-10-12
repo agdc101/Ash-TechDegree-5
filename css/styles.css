@@ -43,9 +43,10 @@ input:focus {
   width: 150px;
   height: 150px;
   box-shadow: 6px 6px 6px #888787;
+  transition: transform .3s ease;
 }
 .gallery a img:hover {
-  transform: scale(1.07);
+  transform: scale(1.05);
 }
 
 .sign-off {
